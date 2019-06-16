@@ -5,6 +5,17 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
 /* Reset Code */
+
+.img-reklama{
+    width: 100%;
+    height: 300px;
+}
+
+.img-instruk{
+    width: 100%;
+    height: 378px;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -196,7 +207,7 @@ nav.fixed-navi ul li {
 /* banner section */
 /* banner text */
 .pogoSlider {
-    min-height: 50vw !important;
+    min-height: 44vw !important;
 }
 
 .pogoSlider-slide-element {

@@ -9,7 +9,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var AboutRouter = require('./routes/About');
 var ContactRouter = require('./routes/Contact');
-var GaleriiRouter = require('./routes/Galerii');
+var GaleriiRouter = require('./routes/Gallary');
 var loginRouter = require('./routes/login');
 var RestourRouter = require('./routes/Restour');
 

@@ -1,0 +1,28 @@
+<!-- restaurant -->
+	<div class="overview py-5" id="team">
+		<div class="container py-xl-5 py-lg-3">
+			<!-- heading title -->
+			<div class="main-title text-center mb-5">
+				<h3 class="tittle text-uppercase font-weight-bold">Заведения партнеры</h3>
+				<div class="title-icon">
+					<i class="fas fa-camera"></i>
+				</div>
+				<p class="sub-tittle">Заведения, с которыми мы сотрудничаем являются профессионалами своего дела!</p>
+			</div>
+			<!-- //heading title -->
+			<div class="row">
+				<% for(var i=0; i<3; i++){ %>
+					<%- include("restaurSingle", {image: restObj.image[i], restTitle: restObj.restTitle[i], 
+					facebook: restObj.facebook[i], instagram: restObj.instagram[i], restHref: restObj.restHref[i]}) %>
+				<% }%>
+			</div>
+			<div class="row mt-lg-5 mt-md-4">
+				<% for(var i=3; i<6; i++){ %>
+					<%- include("restaurSingle", {image: restObj.image[i], restTitle: restObj.restTitle[i], 
+					facebook: restObj.facebook[i], instagram: restObj.instagram[i], restHref: restObj.restHref[i]}) %>
+				<% }%>
+			</div>
+		</div>
+        <hr>
+	</div>
+	<!-- //restaurant -->

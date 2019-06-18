@@ -1,0 +1,27 @@
+	<!-- gallery -->
+	<section class="gallery pt-5" id="gallery">
+		<div class="pt-xl-5 pt-lg-3">
+			<!-- heading title -->
+			
+			<div class="main-title text-center mb-5">
+				<h3 class="tittle text-uppercase font-weight-bold">Галерея</h3>
+				<div class="title-icon">
+					<i class="fas fa-camera"></i>
+				</div>
+				<p class="sub-tittle">Небольшая презентация нашей работы
+                    для того, чтобы вы убедились в профессионализме наших сотрудников!
+                </p>
+			</div>
+			<!-- //heading title -->
+			<ul class="portfolio-area clearfix">
+				<% if(gallArr){%>
+					<% for(var i=0; i<gallArr.length; i++){ %>
+						<%- include("gallaryFoto", {image: gallArr[i]})%>
+					<% }%>
+				<% }%>
+			</ul>
+			<!--end portfolio-area -->
+		</div>
+		<!-- //gallery container -->
+	</section>
+	<!-- //gallery -->

@@ -1,0 +1,45 @@
+
+<!-- gallery -->
+<section class="gallery pt-5" id="gallery">
+	<div class="pt-xl-5 pt-lg-3">
+		<!-- heading title -->
+		<style>
+			img {
+				padding: 4px;
+				background-color: #fff;
+				border: 1px solid #ddd;
+				border-radius: 4px;
+			}
+	
+			img:hover {
+				opacity: 0.6;
+				filter: alpha(opacity=60);
+			}
+		</style>
+		<div class="main-title text-center mb-5">
+			<h3 class="tittle text-uppercase font-weight-bold">Галерея</h3>
+			<div class="title-icon">
+				<i class="fas fa-camera"></i>
+			</div>
+			<p class="sub-tittle">Небольшая презентация нашей работы
+				для того, чтобы вы убедились в профессионализме наших сотрудников!
+			</p>
+		</div>
+	</div>
+	<!-- //heading title -->
+	<div class="container">
+		<div class="grid">
+			<% if (arr1) {%>
+				<% for(var i=0; i<6; i++) {%>
+					<a data-fancybox="gallery" href='<%= arr1[i] %>'>
+						<img class="img-fluid" src='<%= arr1[i] %>' alt="" width="365px">
+					</a>
+				<% }%>
+			<% } else {%>
+				<h3>Ошибка при выводе картины галереи</h3>
+			<% }%>
+		</div>
+	</div>
+	<!-- //gallery container -->
+</section>
+<!-- //gallery -->

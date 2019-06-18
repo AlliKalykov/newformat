@@ -935,6 +935,7 @@ div.ppt {
 @media screen and (max-width: 1600px) {
     .portfolio-area li {
         max-width: 395.7px;
+        max-height: 285px;
     }
 }
 
@@ -992,7 +993,8 @@ div.ppt {
 
 @media screen and (max-width: 800px) {
     .portfolio-area li {
-        max-width: 195px;
+        max-width: 199px;
+        max-height: 140px;
     }
 
     .portfolio-categ li {
@@ -1003,7 +1005,8 @@ div.ppt {
 
 @media screen and (max-width: 768px) {
     .portfolio-area li {
-        max-width: 250px;
+        max-width: 255px;
+        max-height: 190px;
     }
 }
 
@@ -1065,13 +1068,15 @@ div.ppt {
 
 @media screen and (max-width: 414px) {
     .portfolio-area li {
-        max-width: 198px;
+        max-width: 206px;
+        max-height: 129px;
     }
 }
 
 @media screen and (max-width: 384px) {
     .portfolio-area li {
         max-width: 367px;
+        max-height: 270px;
     }
 }
 

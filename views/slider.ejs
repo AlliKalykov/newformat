@@ -4,13 +4,9 @@
 			<div class="col-8" id="mobver">
 				<!-- banner -->
 				<div class="pogoSlider" id="js-main-slider">
-					<% if (sliderObj){%>
-						<% for(var i=0; i<4; i++) {%>
-							<%- include("sliderFoto", {zag: sliderObj.zag[i], image: sliderObj.image[i]})%>
-						<% }%>
-					<% } else {%>
-						<h3>Ошибка при передаче объекта слайдер!</h3>
-					<%} %>
+					<% for(var i=0; i<4; i++) {%>
+						<%- include("sliderFoto", {zag: sliderObj.zag[i], image: sliderObj.image[i]})%>
+					<% }%>
 				</div>
 				<!-- //banner -->
 			</div>
@@ -20,7 +16,7 @@
 					<div>
 						<img src="images/blog1.jpg" class="img-fluid" alt="">
 					</div>
-					<div style="margin-top: 30px;" class="posts-w3ls-bottom py-4">
+					<div style="margin-top: 10px;" class="posts-w3ls-bottom py-4">
 						<div class="posts-top">
 							<a href="#" data-toggle="modal" data-target=".bd-example-modal-lg">
 								<img src="images/blog3.jpg" alt="" class="img-fluid" />

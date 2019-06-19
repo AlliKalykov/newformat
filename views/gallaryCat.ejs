@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head> <%- include head %> </head>
+<body>
+  	<%- include header %>
+		<div class="blog-w3ls py-5 bg-light" id="news">
+            <div class="container py-xl-1 py-lg-3">
+                <!-- heading title -->
+                <div class="main-title text-center mb-5">
+                    <h3 class="tittle text-uppercase font-weight-bold">Галерея</h3>
+                    <div class="title-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <p class="sub-tittle">Здесь вы можете найти интересующие вас фотографии.
+                        Для просмотра и загрузки вы должны иметь пароль!
+                        Так же со дня мероприятие не должно пройти больше <br><b style="font-style: italic;color: red;">10 дней</b></p>
+                </div>
+                <!-- //heading title -->
+                <div class="row package-grids">
+                <% catObj.forEach(element => {%>
+                    <%- include("fotoTemp1",{href: element.href, rekTitle: element.rekTitle, rekText: element.rekText, image: element.image}) %>
+                <%});%>
+                </div>
+            </div>
+        </div>
+  	<%- include footer %>
+</body>
+</html>

@@ -9,7 +9,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var AboutRouter = require('./routes/About');
 var ContactRouter = require('./routes/Contact');
-var GaleriiRouter = require('./routes/Gallary');
+var GallaryRouter = require('./routes/Gallary');
 var loginRouter = require('./routes/login');
 var RestourRouter = require('./routes/Restour');
 
@@ -29,7 +29,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/About', AboutRouter);
 app.use('/Contact', ContactRouter);
-app.use('/Galerii', GaleriiRouter);
+app.use('/Gallary', GallaryRouter);
 app.use('/login', loginRouter);
 app.use('/Restour', RestourRouter);
 

@@ -39,7 +39,11 @@ router.get('/', function (req, res, next) {
     }
   ]
 
-  res.render('gallaryCat', { title: 'Галерея', gallArr: arr1, catObj: catObj2 });
+  let subT = 'Здесь вы можете найти интересующие вас фотографии.' +
+  'Для просмотра и загрузки вы должны иметь пароль! Так же со дня ' +
+  'мероприятие не должно пройти больше <br><b style="font-style: italic;color: red;">10 дней</b>'
+  
+  res.render('gallaryCat', {title: "Фотоотчеты", subText: subT, catObj: catObj2, gallArr: arr1 });
 
 });
 

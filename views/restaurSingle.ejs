@@ -1,9 +1,9 @@
 <div class="col-md-4 team-effect-agile">
     <div class="box8">
         <img src=<%= image %> alt="" class="img-fluid">
-        <h6 class="title"><%= restTitle %></h6>
-        <ul class="icon" style="margin: -5% -80% 10% 0%;">
-            <li style="margin-bottom: 2%">
+        <h6 class="title" onClick="window.location.href = '<%= restHref %>';" style="cursor: pointer;"><%= restTitle %></h6>
+        <ul class="icon" style="margin: -15% 5% 5% 15%" id="fac-inst">
+            <li style="margin-bottom: 15px">
                 <a href=<%= facebook %>>
                     <i class="fab fa-facebook-f"></i>
                 </a>
@@ -16,12 +16,13 @@
             </li>
         </ul>
         <div class="box-content">
-            <ul class="icon">
-                <li>
+            <ul class="icon"  style="margin: -15% 5% 5% 15%">
+                <li style="margin-bottom: 15px">
                     <a href=<%= facebook %>>
                         <i class="fab fa-facebook-f"></i>
                     </a>
                 </li>
+                <br>
                 <li>
                     <a href=<%= instagram %>>
                         <i class="fab fa-instagram"></i>

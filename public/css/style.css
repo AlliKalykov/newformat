@@ -454,6 +454,14 @@ button.play-button i {
     bottom: -40px;
 }
 
+.box8:hover #fac-inst{
+    transition: all .9s ease 0s;
+}
+
+.box8:hover #fac-inst{
+    right: -110px;
+}
+
 .box8 .icon li,
 .box8 .title {
     display: inline-block;
@@ -474,7 +482,6 @@ button.play-button i {
     list-style: none;
     padding: 0;
     top: 42%;
-    left: 0;
     right: 0
 }
 

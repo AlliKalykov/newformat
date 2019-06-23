@@ -1326,5 +1326,116 @@ p.copy-right-grids a:hover {
         font-size: 24px;
     }
 }
+ /* Customize the label (the label.container) */
+ label.container {
+    display: block;
+    position: absolute;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 0%;
+    right: 0%;
+  }
+  
+  /* Hide the browser's default checkbox */
+  label.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 30px;
+    width: 30px;
+    background-color: #ffc168;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  label.container:hover input ~ .checkmark {
+    background-color: #ff4f81;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  label.container input:checked ~ .checkmark {
+    background-color: #ff4f81;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  label.container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  label.container .checkmark:after {
+    left: 9px;
+    top: 3px;
+    width: 12px;
+    height: 18px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
 
+  /* Customize the label (the label.container) */
+ span.container {
+    display: block;
+    position: absolute;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 29px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 30px;
+    height: 30px;
+    right: 60px;
+    line-height: 0;
+  }
+  span.container a{
+    color: #ff4f81;
+  }
+  span.container:hover a{
+    color: white;
+    background-color: #ffc168;
+  }
+
+#download {
+    display: block;
+    cursor: pointer;
+    width: 16vw !important;
+    font-size: 30px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    right: 100%;
+    background-color: wheat;
+    font-size: 20px;
+    min-width: 137px;
+    text-align: center;
+  }
+
+  #download:hover a{
+    color: #ff4f81;
+  }
 /* //responsive */

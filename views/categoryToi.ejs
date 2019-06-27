@@ -1,0 +1,20 @@
+<!-- news -->
+<div class="blog-w3ls py-5 bg-light" id="news">
+    <div class="container py-xl-1 py-lg-3">
+        <!-- heading title -->
+        <div class="main-title text-center mb-5">
+            <h3 class="tittle text-uppercase font-weight-bold">Тои</h3>
+            <div class="title-icon">
+                <i class="fas fa-camera"></i>
+            </div>
+            <p class="sub-tittle">Самые популярные тои</p>
+        </div>
+        <!-- //heading title -->
+        <div class="row package-grids">
+            <% catObj.forEach(element => {%>
+                <%- include("fotoGal",{href: element.href, rekTitle: element.rekTitle, rekText: element.rekText, image: element.image}) %>
+            <%});%>
+        </div>
+    </div>
+</div>
+<!-- //news -->

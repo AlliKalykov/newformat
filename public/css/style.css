@@ -20,7 +20,7 @@ body {
     padding: 0;
     margin: 0;
     background: #FFF;
-    font-family: 'Hind', sans-serif;
+    font-family: 'Merienda', cursive;
 }
 
 body a {
@@ -72,7 +72,7 @@ h5,
 h6 {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Merienda', cursive;
 }
 
 p {
@@ -81,8 +81,8 @@ p {
     font-size: 16px;
     letter-spacing: 1px;
     line-height: 1.9;
-    color: #999;
-    font-family: 'Hind', sans-serif;
+    color: rgb(24, 21, 21);
+    font-family: 'Merienda', cursive;
 }
 
 ul,
@@ -133,7 +133,7 @@ a:hover {
 /* header */
 /* logo */
 a.navbar-brand {
-    font-size: 36px;
+    font-size: 30px;
     letter-spacing: 1px;
     color: #ff4f81;
     text-shadow: 2px 5px 3px rgba(0, 0, 0, 0.18);
@@ -304,7 +304,7 @@ h3.aboutright {
 h4.aboutright {
     margin: 1.5em 0;
     font-style: italic;
-    font-family: initial;
+    font-family: 'Merienda', cursive;
     font-size: 16px;
     color: #383838;
 }
@@ -374,13 +374,34 @@ h4.aboutright {
     min-height: 480px;
 }
 
+.video-w3ls-slider {
+    background: url(../images/bg.jpg) no-repeat top;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    min-height: 360px;
+}
+
 button.play-button {
     background: transparent;
     border: none;
     margin-top: 11em;
 }
 
+button.play-button-slider {
+    background: transparent;
+    border: none;
+    margin-top: 7em;
+}
+
 button.play-button i {
+    font-size: 7em;
+    color: #fff;
+}
+
+button.play-button-slider i {
     font-size: 7em;
     color: #fff;
 }
@@ -727,7 +748,7 @@ button.play-button i {
 /* //newsletter */
 /* footer */
 a.navbar-brand.logo2 {
-    font-size: 32px;
+    font-size: 26px;
 }
 
 /* navigation */
@@ -872,7 +893,7 @@ p.copy-right-grids a:hover {
     }
 
     a.navbar-brand {
-        font-size: 32px;
+        font-size: 26px;
     }
 
     a.navbar-brand img {
@@ -961,7 +982,7 @@ p.copy-right-grids a:hover {
     }
 
     a.navbar-brand.logo2 {
-        font-size: 29px;
+        font-size: 23px;
     }
 
     a.navbar-brand img {
@@ -1181,7 +1202,7 @@ p.copy-right-grids a:hover {
     }
 
     a.navbar-brand {
-        font-size: 28px;
+        font-size: 22px;
     }
     .modal-body iframe {
         height: 228px;
@@ -1433,9 +1454,92 @@ p.copy-right-grids a:hover {
     font-size: 20px;
     min-width: 137px;
     text-align: center;
+    max-height: 40px;
   }
 
   #download:hover a{
     color: #ff4f81;
   }
 /* //responsive */
+
+@keyframes click-wave {
+    0% {
+      height: 30px;
+      width: 30px;
+      opacity: 0.35;
+      position: relative;
+    }
+    100% {
+      height: 200px;
+      width: 200px;
+      margin-left: 0px;
+      margin-top:   0px;
+      opacity: 0;
+    }
+  }
+  
+  .option-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    position: relative;
+    top: 0px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    transition: all 0.15s ease-out 0s;
+    background: #007bff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 0.5rem;
+    outline: none;
+    position: relative;
+    z-index: 1000;
+  }
+  .option-input:hover {
+    background: white;
+  }
+  .option-input:checked {
+    background: #ff4f81;
+  }
+  .option-input:checked::before {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    content: '✔️';
+    display: inline-block;
+    font-size: 26.66667px;
+    text-align: center;
+    line-height: 30px;
+  }
+  .option-input:checked::after {
+    -webkit-animation: click-wave 0.65s;
+    -moz-animation: click-wave 0.65s;
+    animation: click-wave 0.65s;
+    background: #ff4f81;
+    content: '';
+    display: block;
+    position: relative;
+    z-index: 100;
+    color: #ff4f81;
+  }
+
+  .mapouter{
+      position:relative;
+      text-align:right;
+      height:350px;
+      width:600px;
+    }
+    
+    #gmap_canvas {
+        overflow:hidden;
+        background:none!important;
+        height:350px;
+        width:600px;
+    }

@@ -1,45 +1,45 @@
-	<!-- gallery -->
-	<section class="gallery pt-1" id="gallery">
-		<div class="pt-xl-5 pt-lg-3">
-			<!-- heading title -->
-			
-			<div class="main-title text-center mb-5">
-				<h3 class="tittle text-uppercase font-weight-bold"><%- title %></h3>
-				<div class="title-icon">
-					<i class="fas fa-camera"></i>
-				</div>
-				<p class="sub-tittle"><%- subText %></p>
+<!-- gallery -->
+<section class="gallery pt-1" id="gallery">
+	<div class="pt-xl-5 pt-lg-3">
+		<!-- heading title -->
+
+		<div class="main-title text-center mb-5">
+			<h3 class="tittle text-uppercase font-weight-bold"><%- title %></h3>
+			<div class="title-icon">
+				<i class="fas fa-camera"></i>
 			</div>
-			<!-- //heading title -->
-			<ul class="portfolio-area clearfix">
-				<% if(gallArr){%>
-					<% for(var i=0; i<gallArr.length; i++){ %>
-						<%- include("gallaryFoto", {image: gallArr[i]})%>
-					<% }%>
+			<p class="sub-tittle"><%- subText %></p>
+		</div>
+		<!-- //heading title -->
+		<ul class="portfolio-area clearfix">
+			<% if(gallArr){%>
+				<% for(var i=0; i<gallArr.length; i++){ %>
+					<%- include("gallaryFoto", {image: gallArr[i], value: i})%>
 				<% }%>
-			</ul>
-			<!--end portfolio-area -->
-		</div>
-		<div class="blog-w3ls py-3 bg-light">
-			<div class="container">
-				<div class="row">
-					<div class="col-6">
-						<div class="container py-xl-1 py-lg-3" id="download">
-							<a href="https://facebook.com" class="mb-4">
-								<i class="fa fa-check-square ">Выделить все</i>
-							</a>
-						</div>
+			<% }%>
+		</ul>
+		<!--end portfolio-area -->
+	</div>
+	<div class="blog-w3ls py-3 bg-light">
+		<div class="container">
+			<div class="row">
+				<div class="col-6">
+					<div class="container py-xl-1 py-lg-3" id="download">
+						<a href="#"  onclick="cheked_all()"class="mb-4">
+							<i class="fa fa-check-square ">Выделить все</i>
+						</a>
 					</div>
-					<div class="col-6">
-						<div class="container py-xl-1 py-lg-3" id="download">
-							<a href="https://facebook.com" class="mb-4">
-								<i class="fa fa-download" >Скачать выделенные</i>
-							</a>
-						</div>
+				</div>
+				<div class="col-6">
+					<div class="container py-xl-1 py-lg-3" id="download" >
+						<a href="#"  onclick="donw();" class="mb-4">
+							<i class="fa fa-download" >Скачать выделенные</i>
+						</a>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- //gallery container -->
-	</section>
-	<!-- //gallery -->
+	</div>
+	<!-- //gallery container -->
+</section>
+<!-- //gallery -->

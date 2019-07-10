@@ -18,7 +18,7 @@
             <!-- //heading title -->
             <div class="row package-grids">
             <% restObj.forEach(element => {%>
-                <%- include("fotoRest",{href: element.href, rekTitle: element.rekTitle, rekText: element.rekText, 
+                <%- include("restaurSingle",{restHref: element.restHref, restTitle: element.restTitle,
                     image: element.image, facebook: element.facebook, instagram: element.instagram}) %>
             <%});%>
             </div>

@@ -35,6 +35,6 @@
     "promise": "^8.0.3",
     "resize-image": "^0.1.0",
     "resize-img": "^1.1.2",
-    "sharp": "^0.22.1"
+    "sharp": "^0.30.5"
   }
 }
